@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.elphen.miniapp.api.mapper" />
+        <option name="javaMapperPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\mapper" />
+        <option name="javaModelPackage" value="com.elphen.miniapp.domain.entity" />
+        <option name="javaModelPath" value="G:\IDEAWorkSpace\miniapp\miniapp.domain\src\main\java\com\elphen\miniapp\domain\entity" />
+        <option name="lastDatabaseCrudChooseModuleName" value="miniapp.common" />
+        <option name="lombokAllArgConstructor" value="true" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="lombokNoArgsConstructor" value="true" />
+        <option name="modelAddToString" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="miniapp.common">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.elphen.miniapp.api.mapper" />
+                  <option name="javaMapperPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\mapper" />
+                  <option name="javaModelPacakge" value="com.elphen.miniapp.domain.entity" />
+                  <option name="javaModelPath" value="G:\IDEAWorkSpace\miniapp\miniapp.domain\src\main\java\com\elphen\miniapp\domain\entity" />
+                  <option name="javaServiceInterfacePackage" value="com.elphen.miniapp.api.service" />
+                  <option name="javaServiceInterfacePath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\service" />
+                  <option name="javaServicePackage" value="com.elphen.miniapp.api.service.impl" />
+                  <option name="javaServicePath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\service\impl" />
+                  <option name="xmlPackage" value="mapperxml" />
+                  <option name="xmlPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\resources\mapperxml" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="my_miniapp:t_event">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="EVENT_ID" />
+                  <option name="javaModelName" value="TEvent" />
+                  <option name="moduleName" value="miniapp.common" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mapperxml" />
+        <option name="xmlMapperPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\resources\mapperxml" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

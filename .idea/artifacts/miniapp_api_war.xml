@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="miniapp.api:war">
+    <output-path>$PROJECT_DIR$/miniapp.api/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>miniapp.api</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="miniapp.api-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="miniapp.api:war exploded" />
+    </root>
+  </artifact>
+</component>
