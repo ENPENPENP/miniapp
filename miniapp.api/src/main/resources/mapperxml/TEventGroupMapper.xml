@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elphen.miniapp.api.mapper.TEventGroupMapper">
+  <resultMap id="BaseResultMap" type="com.elphen.miniapp.domain.entity.TEventGroup">
+    <!--@mbg.generated-->
+    <!--@Table t_event_group-->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <id column="EVENT_ID" jdbcType="INTEGER" property="eventId" />
+    <id column="GROUP_ID" jdbcType="INTEGER" property="groupId" />
+    <result column="IS_ALL_USER" jdbcType="TINYINT" property="isAllUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    ID, EVENT_ID, GROUP_ID, IS_ALL_USER
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from t_event_group
+    where ID = #{id,jdbcType=INTEGER}
+      and EVENT_ID = #{eventId,jdbcType=INTEGER}
+      and GROUP_ID = #{groupId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    <!--@mbg.generated-->
+    delete from t_event_group
+    where ID = #{id,jdbcType=INTEGER}
+      and EVENT_ID = #{eventId,jdbcType=INTEGER}
+      and GROUP_ID = #{groupId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="ID" keyProperty="id" parameterType="com.elphen.miniapp.domain.entity.TEventGroup" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into t_event_group (EVENT_ID, GROUP_ID, IS_ALL_USER
+      )
+    values (#{eventId,jdbcType=INTEGER}, #{groupId,jdbcType=INTEGER}, #{isAllUser,jdbcType=TINYINT}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="ID" keyProperty="id" parameterType="com.elphen.miniapp.domain.entity.TEventGroup" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into t_event_group
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="eventId != null">
+        EVENT_ID,
+      </if>
+      <if test="groupId != null">
+        GROUP_ID,
+      </if>
+      <if test="isAllUser != null">
+        IS_ALL_USER,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="eventId != null">
+        #{eventId,jdbcType=INTEGER},
+      </if>
+      <if test="groupId != null">
+        #{groupId,jdbcType=INTEGER},
+      </if>
+      <if test="isAllUser != null">
+        #{isAllUser,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elphen.miniapp.domain.entity.TEventGroup">
+    <!--@mbg.generated-->
+    update t_event_group
+    <set>
+      <if test="isAllUser != null">
+        IS_ALL_USER = #{isAllUser,jdbcType=TINYINT},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+      and EVENT_ID = #{eventId,jdbcType=INTEGER}
+      and GROUP_ID = #{groupId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elphen.miniapp.domain.entity.TEventGroup">
+    <!--@mbg.generated-->
+    update t_event_group
+    set IS_ALL_USER = #{isAllUser,jdbcType=TINYINT}
+    where ID = #{id,jdbcType=INTEGER}
+      and EVENT_ID = #{eventId,jdbcType=INTEGER}
+      and GROUP_ID = #{groupId,jdbcType=INTEGER}
+  </update>
+</mapper>

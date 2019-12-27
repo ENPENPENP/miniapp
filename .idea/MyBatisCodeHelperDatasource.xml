@@ -7,29 +7,28 @@
         <option name="generateService" value="true" />
         <option name="generateServiceInterface" value="true" />
         <option name="javaMapperPackage" value="com.elphen.miniapp.api.mapper" />
-        <option name="javaMapperPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/miniapp.api/src/main/java" />
         <option name="javaModelPackage" value="com.elphen.miniapp.domain.entity" />
-        <option name="javaModelPath" value="G:\IDEAWorkSpace\miniapp\miniapp.domain\src\main\java\com\elphen\miniapp\domain\entity" />
-        <option name="lastDatabaseCrudChooseModuleName" value="miniapp.common" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/miniapp.domain/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="miniapp.domain" />
         <option name="lombokAllArgConstructor" value="true" />
         <option name="lombokDataAnnotation" value="true" />
-        <option name="lombokNoArgsConstructor" value="true" />
         <option name="modelAddToString" value="true" />
         <option name="moduleNameToPackageAndPathMap">
           <map>
-            <entry key="miniapp.common">
+            <entry key="miniapp.domain">
               <value>
                 <UserPackageAndPathInfoByModule>
                   <option name="javaMapperPackage" value="com.elphen.miniapp.api.mapper" />
-                  <option name="javaMapperPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/miniapp.api/src/main/java" />
                   <option name="javaModelPacakge" value="com.elphen.miniapp.domain.entity" />
-                  <option name="javaModelPath" value="G:\IDEAWorkSpace\miniapp\miniapp.domain\src\main\java\com\elphen\miniapp\domain\entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/miniapp.domain/src/main/java" />
                   <option name="javaServiceInterfacePackage" value="com.elphen.miniapp.api.service" />
-                  <option name="javaServiceInterfacePath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/miniapp.api/src/main/java" />
                   <option name="javaServicePackage" value="com.elphen.miniapp.api.service.impl" />
-                  <option name="javaServicePath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\java\com\elphen\miniapp\api\service\impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/miniapp.api/src/main/java" />
                   <option name="xmlPackage" value="mapperxml" />
-                  <option name="xmlPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\resources\mapperxml" />
+                  <option name="xmlPath" value="D:\ideaworkspace\miniapp\miniapp.api\src\main\resources\mapperxml" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -42,9 +41,83 @@
                 <TableGenerateConfig>
                   <option name="generatedKey" value="EVENT_ID" />
                   <option name="javaModelName" value="TEvent" />
-                  <option name="moduleName" value="miniapp.common" />
-                  <option name="sequenceColumn" value="" />
-                  <option name="sequenceId" value="" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_event_group">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="ID" />
+                  <option name="javaModelName" value="TEventGroup" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_file_data">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="TFileData" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_file_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="FILE_ID" />
+                  <option name="javaModelName" value="TFileInfo" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_group">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="TGroup" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="TUser" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_user_group">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="ID" />
+                  <option name="javaModelName" value="TUserGroup" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_user_msg">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="ID" />
+                  <option name="javaModelName" value="TUserMsg" />
+                  <option name="moduleName" value="miniapp.domain" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="my_miniapp:t_user_profile">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="TUserProfile" />
+                  <option name="moduleName" value="miniapp.domain" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
@@ -52,7 +125,7 @@
           </map>
         </option>
         <option name="xmlMapperPackage" value="mapperxml" />
-        <option name="xmlMapperPath" value="G:\IDEAWorkSpace\miniapp\miniapp.api\src\main\resources\mapperxml" />
+        <option name="xmlMapperPath" value="D:\ideaworkspace\miniapp\miniapp.api\src\main\resources\mapperxml" />
       </ProjectProfile>
     </option>
   </component>

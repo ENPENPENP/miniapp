@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elphen.miniapp.api.mapper.TGroupMapper">
+  <resultMap id="BaseResultMap" type="com.elphen.miniapp.domain.entity.TGroup">
+    <!--@mbg.generated-->
+    <!--@Table t_group-->
+    <id column="GROUP_ID" jdbcType="INTEGER" property="groupId" />
+    <id column="GROUP_OWNER_ID" jdbcType="VARCHAR" property="groupOwnerId" />
+    <result column="GROUP_NAME" jdbcType="VARCHAR" property="groupName" />
+    <result column="IS_PRIVATE" jdbcType="BOOLEAN" property="isPrivate" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    GROUP_ID, GROUP_OWNER_ID, GROUP_NAME, IS_PRIVATE, CREATE_TIME
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="map" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from t_group
+    where GROUP_ID = #{groupId,jdbcType=INTEGER}
+      and GROUP_OWNER_ID = #{groupOwnerId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    <!--@mbg.generated-->
+    delete from t_group
+    where GROUP_ID = #{groupId,jdbcType=INTEGER}
+      and GROUP_OWNER_ID = #{groupOwnerId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.elphen.miniapp.domain.entity.TGroup">
+    <!--@mbg.generated-->
+    insert into t_group (GROUP_ID, GROUP_OWNER_ID, GROUP_NAME, 
+      IS_PRIVATE, CREATE_TIME)
+    values (#{groupId,jdbcType=INTEGER}, #{groupOwnerId,jdbcType=VARCHAR}, #{groupName,jdbcType=VARCHAR}, 
+      #{isPrivate,jdbcType=BOOLEAN}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.elphen.miniapp.domain.entity.TGroup">
+    <!--@mbg.generated-->
+    insert into t_group
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="groupId != null">
+        GROUP_ID,
+      </if>
+      <if test="groupOwnerId != null">
+        GROUP_OWNER_ID,
+      </if>
+      <if test="groupName != null">
+        GROUP_NAME,
+      </if>
+      <if test="isPrivate != null">
+        IS_PRIVATE,
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="groupId != null">
+        #{groupId,jdbcType=INTEGER},
+      </if>
+      <if test="groupOwnerId != null">
+        #{groupOwnerId,jdbcType=VARCHAR},
+      </if>
+      <if test="groupName != null">
+        #{groupName,jdbcType=VARCHAR},
+      </if>
+      <if test="isPrivate != null">
+        #{isPrivate,jdbcType=BOOLEAN},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.elphen.miniapp.domain.entity.TGroup">
+    <!--@mbg.generated-->
+    update t_group
+    <set>
+      <if test="groupName != null">
+        GROUP_NAME = #{groupName,jdbcType=VARCHAR},
+      </if>
+      <if test="isPrivate != null">
+        IS_PRIVATE = #{isPrivate,jdbcType=BOOLEAN},
+      </if>
+      <if test="createTime != null">
+        CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where GROUP_ID = #{groupId,jdbcType=INTEGER}
+      and GROUP_OWNER_ID = #{groupOwnerId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.elphen.miniapp.domain.entity.TGroup">
+    <!--@mbg.generated-->
+    update t_group
+    set GROUP_NAME = #{groupName,jdbcType=VARCHAR},
+      IS_PRIVATE = #{isPrivate,jdbcType=BOOLEAN},
+      CREATE_TIME = #{createTime,jdbcType=TIMESTAMP}
+    where GROUP_ID = #{groupId,jdbcType=INTEGER}
+      and GROUP_OWNER_ID = #{groupOwnerId,jdbcType=VARCHAR}
+  </update>
+</mapper>

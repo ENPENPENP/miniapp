@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/miniapp.iml" filepath="$PROJECT_DIR$/.idea/miniapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniapp.iml" filepath="$PROJECT_DIR$/miniapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/miniapp.admin/miniapp.admin.iml" filepath="$PROJECT_DIR$/miniapp.admin/miniapp.admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/miniapp.api/miniapp.api.iml" filepath="$PROJECT_DIR$/miniapp.api/miniapp.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/miniapp.common/miniapp.common.iml" filepath="$PROJECT_DIR$/miniapp.common/miniapp.common.iml" />

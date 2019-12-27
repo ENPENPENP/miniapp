@@ -5,15 +5,16 @@ import javax.annotation.Resource;
 import com.elphen.miniapp.api.mapper.TEventMapper;
 import com.elphen.miniapp.domain.entity.TEvent;
 import com.elphen.miniapp.api.service.TEventService;
+
 @Service
-public class TEventServiceImpl implements TEventService{
+public class TEventServiceImpl implements TEventService {
 
     @Resource
     private TEventMapper tEventMapper;
 
     @Override
-    public int deleteByPrimaryKey(Integer eventId,Integer fileId,String ownerId) {
-        return tEventMapper.deleteByPrimaryKey(eventId,fileId,ownerId);
+    public int deleteByPrimaryKey(Integer eventId, Integer fileId, String ownerId) {
+        return tEventMapper.deleteByPrimaryKey(eventId, fileId, ownerId);
     }
 
     @Override
@@ -27,8 +28,8 @@ public class TEventServiceImpl implements TEventService{
     }
 
     @Override
-    public TEvent selectByPrimaryKey(Integer eventId,Integer fileId,String ownerId) {
-        return tEventMapper.selectByPrimaryKey(eventId,fileId,ownerId);
+    public TEvent selectByPrimaryKey(Integer eventId, Integer fileId, String ownerId) {
+        return tEventMapper.selectByPrimaryKey(eventId, fileId, ownerId);
     }
 
     @Override
@@ -42,3 +43,4 @@ public class TEventServiceImpl implements TEventService{
     }
 
 }
+

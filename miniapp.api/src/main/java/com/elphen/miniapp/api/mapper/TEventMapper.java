@@ -1,8 +1,9 @@
 package com.elphen.miniapp.api.mapper;
 
 import com.elphen.miniapp.domain.entity.TEvent;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
+@Mapper
 public interface TEventMapper {
     int deleteByPrimaryKey(@Param("eventId") Integer eventId, @Param("fileId") Integer fileId, @Param("ownerId") String ownerId);
 

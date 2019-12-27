@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -17,7 +18,6 @@
       <module name="miniapp.admin" target="1.8" />
       <module name="miniapp.api" target="1.8" />
       <module name="miniapp.common" target="1.8" />
-      <module name="miniapp.dependencies" target="1.8" />
       <module name="miniapp.domain" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -26,7 +26,6 @@
       <module name="miniapp.admin" options="-parameters" />
       <module name="miniapp.api" options="-parameters" />
       <module name="miniapp.common" options="-parameters" />
-      <module name="miniapp.dependencies" options="-parameters" />
       <module name="miniapp.domain" options="-parameters" />
     </option>
   </component>
