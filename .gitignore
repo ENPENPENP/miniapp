@@ -30,7 +30,7 @@ hs_err_pid*
 *.iml
 
 # Datasource local storage ignored files
-/.idea/
+.idea/
 
 # Jrebel configuration file
 /**/src/main/resources/rebel.xml
